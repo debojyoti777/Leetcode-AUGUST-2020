@@ -29,13 +29,9 @@ bool detectCapitalUse(char * word)
         for(i=1;i<=n;i++)
         {
             if(word[i]>='A'&& word[i]<='Z')
-            {
                 k++;
-            }
             else if(word[i]>='a'&& word[i]<='z')
-            {
                 l++;
-            }
         }
     }
     else if(word[i]>='a'&& word[i]<='z')
@@ -43,17 +39,11 @@ bool detectCapitalUse(char * word)
         for(i=1;i<=n;i++)
         {
             if(word[i]>='a'&& word[i]<='z')
-            {
                 m++;
-            }
         }
     }
     if(k==n-1||l==n-1||m==n-1)
-    {
         return true;
-    }  
     else
-    {
         return false;
-    }
 }
