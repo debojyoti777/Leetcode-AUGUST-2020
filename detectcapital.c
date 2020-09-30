@@ -42,8 +42,5 @@ bool detectCapitalUse(char * word)
                 m++;
         }
     }
-    if(k==n-1||l==n-1||m==n-1)
-        return true;
-    else
-        return false;
+    if(k==n-1||l==n-1||m==n-1) ? return true : return false;
 }
